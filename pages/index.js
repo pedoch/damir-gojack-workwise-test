@@ -70,7 +70,7 @@ export default function Home() {
           <p className="text-8xl max-w-2xl font-bold text-white tablet:mt-40 phone:mt-20 smallTablet:text-7xl">
             Make Croatia Great Again.
           </p>
-          <div className="p-8 rounded-full bg-white flex flex-col justify-center text-center mt-60 -ml-14 cursor-pointer hover:shadow-lg tablet:mt-20 tablet:mx-auto tablet:mb-auto phone:mt-10 smallPhone:p-6">
+          <div className="p-8 rounded-full bg-white flex flex-col justify-center text-center mt-60 -ml-14 cursor-pointer hover:shadow-lg tablet:mt-20 tablet:mx-auto tablet:mb-auto phone:mt-10 phone:p-3">
             <ArrowRight className="mb-4 mx-auto" />
             <p className="text-sm font-bold mb-4 smallPhone:text-xs" style={{ maxWidth: '94px' }}>
               Click here to get involved
@@ -159,14 +159,16 @@ export default function Home() {
           <div className="w-full max-w-6xl mx-auto py-20">
             <div className="w-full min-w-full relative flex justify-center items-center">
               <img src="/images/video.png" className="w-full h-auto" />
-              <img src="/images/play-icon.png" className="absolute" />
+              <img src="/images/play-icon.png" className="absolute phone:w-24 phone:h-auto" />
             </div>
             <div
-              className="w-full flex justify-between mt-32 smallLaptop:flex-col phone:mt-16"
+              className="w-full flex justify-between mt-32 smallLaptop:flex-col smallLaptop:mt-20 phone:mt-16"
               style={{ color: '#4D4D4D' }}
             >
-              <p className="text-2xl mr-auto mt-16 smallLaptop:mb-10">Get involved</p>
-              <div className="w-full max-w-4xl">
+              <p className="text-2xl mr-auto mt-16 smallLaptop:mt-0 smallLaptop:mb-10">
+                Get involved
+              </p>
+              <div className="w-full max-w-4xl mx-auto">
                 <p className="text-8xl max-w-4xl tablet:text-6xl smallPhone:break-all">
                   Be Part of Our Community
                 </p>
