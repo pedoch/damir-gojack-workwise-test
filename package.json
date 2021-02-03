@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^9.8.6",
     "axios": "^0.21.1",
     "next": "^10.0.5",
