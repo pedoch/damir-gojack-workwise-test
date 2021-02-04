@@ -289,7 +289,7 @@ export default function Home() {
               </p>
             </div>
             <div className="col-span-1">
-              <div className="w-full flex justify-between space-x-5 font-semibold text-xl flex-wrap smallTablet:space-x-3">
+              <div className="w-full flex justify-between space-x-5 font-semibold text-xl tablet:flex-col tablet:space-x-0">
                 <a className="hover:text-yellow-500 mb-2" href="#">
                   Meet Damir
                 </a>
