@@ -169,7 +169,7 @@ export default function Home() {
                 >
                   <input
                     placeholder="Full name"
-                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder hover:shadow focus:border-black"
                     style={{ borderWidth: '1.5px' }}
                     required
                     value={name}
@@ -177,7 +177,7 @@ export default function Home() {
                   />
                   <input
                     placeholder="Email address"
-                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder hover:shadow focus:border-black"
                     style={{ borderWidth: '1.5px' }}
                     type="email"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -193,7 +193,7 @@ export default function Home() {
                   />
                   <input
                     placeholder="Phone number"
-                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder hover:shadow focus:border-black"
                     style={{ borderWidth: '1.5px' }}
                     type="tel"
                     pattern="[0]{1}[7-9]{1}[0-9]{9}"
@@ -209,14 +209,14 @@ export default function Home() {
                   />
                   <input
                     placeholder="Company name"
-                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder hover:shadow focus:border-black"
                     style={{ borderWidth: '1.5px' }}
                     required
                     value={company_name}
                     onChange={(e) => setCompanyName(e.target.value)}
                   />
                   <textarea
-                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder hover:shadow focus:border-black"
                     style={{ borderWidth: '1.5px' }}
                     placeholder="Message"
                     required
@@ -245,7 +245,7 @@ export default function Home() {
               </p>
               <input
                 placeholder="Email address"
-                className="p-5 rounded-xl w-full max-w-4xl mt-10 mb-5 border-inputBorder"
+                className="p-5 rounded-xl w-full max-w-4xl mt-10 mb-5 border-inputBorder hover:shadow focus:border-black"
                 style={{ borderWidth: '1.5px' }}
               />
               <div className="mt-8">
