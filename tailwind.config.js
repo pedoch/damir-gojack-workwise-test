@@ -22,8 +22,10 @@ module.exports = {
         // => @media (max-width: 320px) { ... }
       },
       colors: {
-        primary: '#F4A42D',
-        primarylight: '#f3a32c',
+        greyishBg: '#1A1A1A',
+        greyishText: '#4D4D4D',
+        yellowishLine: '#FFBE3F',
+        inputBorder: '#B3B3B3',
       },
       width: {
         102: '30rem',

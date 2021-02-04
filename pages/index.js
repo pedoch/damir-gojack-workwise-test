@@ -1,12 +1,9 @@
 import axios from 'axios';
 import Head from 'next/head';
 import { useState } from 'react';
+import Footer from '../components/common/Footer';
 import Navbar from '../components/common/Navbar';
 import ArrowRight from '../components/icons/ArrowRight';
-import Facebook from '../components/icons/Facebook';
-import Instagram from '../components/icons/Instagram';
-import LinkedIn from '../components/icons/LinkedIn';
-import Twitter from '../components/icons/Twitter';
 
 export default function Home() {
   const [name, setName] = useState('');
@@ -66,39 +63,33 @@ export default function Home() {
         style={{ backgroundImage: "url('/images/jumbo.png')" }}
       >
         <Navbar />
-        <div className="w-full h-full min-h-full max-w-6xl mx-auto flex items-center px-5 tablet:flex-wrap">
+        <div className="w-full h-full min-h-full max-w-7xl mx-auto flex items-center px-5 tablet:flex-wrap">
           <p className="text-8xl max-w-2xl font-bold text-white tablet:mt-40 phone:mt-20 smallTablet:text-7xl">
             Make Croatia Great Again.
           </p>
-          <div className="p-8 rounded-full bg-white flex flex-col justify-center text-center mt-60 -ml-14 cursor-pointer hover:shadow-lg tablet:mt-20 tablet:mx-auto tablet:mb-auto phone:mt-10 phone:p-3">
+          <div className="p-12 rounded-full bg-white flex flex-col justify-center text-center mt-52 -ml-16 cursor-pointer hover:shadow-lg tablet:mt-20 tablet:mx-auto tablet:mb-auto phone:mt-10 phone:p-6">
             <ArrowRight className="mb-4 mx-auto" />
-            <p className="text-sm font-bold mb-4 smallPhone:text-xs" style={{ maxWidth: '94px' }}>
+            <p className="text-md font-bold mb-4 smallPhone:text-xs" style={{ maxWidth: '94px' }}>
               Click here to get involved
             </p>
           </div>
         </div>
         <div className="w-full">
-          <div className="w-full max-w-6xl mx-auto px-5">
+          <div className="w-full max-w-7xl mx-auto px-5">
             <div
-              className="w-full flex justify-between p-12 -mt-16 rounded phone:flex-wrap phone:p-6 phone:mt-5"
+              className="w-full flex justify-between p-12 -mt-20 rounded phone:flex-wrap phone:p-6 tablet:mt-5"
               style={{ backgroundColor: '#F7F7F7' }}
             >
               <div className="text-2xl font-semibold phone:text-xl">
                 <p>Honest . Patriotic . Committed</p>
                 <p>
-                  Vote{' '}
-                  <span className="font-bold" style={{ color: '#FFBE3F' }}>
-                    Damir Gojak
-                  </span>{' '}
-                  as President 2023
+                  Vote <span className="font-bold text-yellowishLine">Damir Gojak</span> as
+                  President 2023
                 </p>
               </div>
               <img src="/images/dg-logo.png" className="h-14 w-14 phone:mx-auto phone:mt-5" />
             </div>
-            <div
-              className="w-full flex justify-between items-center mt-32 smallLaptop:flex-col phone:mt-16"
-              style={{ color: '#4D4D4D' }}
-            >
+            <div className="w-full flex justify-between items-center mt-32 text-greyishText smallLaptop:flex-col phone:mt-16">
               <p className="text-2xl mr-auto smallLaptop:mb-10">My mission</p>
               <p className="text-8xl max-w-4xl tablet:text-6xl smallPhone:break-all">
                 Development from the grassroots.
@@ -112,18 +103,18 @@ export default function Home() {
                   society. Everyone would be involved.
                 </p>
                 <div className="mt-10">
-                  <div className="flex items-center text-2xl cursor-pointer">
+                  <div className="flex items-center text-2xl cursor-pointer font-semibold text-greyishText">
                     <a href="#">Read Damir’s agenda</a>
                     <ArrowRight className="ml-2 mx-auto" />
                   </div>
-                  <hr className="h-4 w-64 -mt-4" style={{ backgroundColor: '#FFBE3F' }} />
+                  <hr className="h-4 w-64 -mt-3 bg-yellowishLine" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full bg-black py-28 relative px-5">
-          <div className="w-full max-w-6xl mx-auto flex text-white" style={{ zIndex: '1' }}>
+        <div className="w-full bg-greyishBg py-28 relative px-5">
+          <div className="w-full max-w-7xl mx-auto flex text-white" style={{ zIndex: '1' }}>
             <div className="w-full z-10">
               <p className="text-8xl max-w-4xl">
                 About <br /> Damir Gojak.
@@ -136,13 +127,13 @@ export default function Home() {
                     Croatia.
                   </p>
                   <div className="mt-10">
-                    <div className="flex items-center text-2xl cursor-pointer">
+                    <div className="flex items-center text-2xl cursor-pointer font-semibold">
                       <a href="#">Learn more abour Damir</a>
                       <ArrowRight className="ml-2 mx-auto fill-current" />
                     </div>
                     <hr
-                      className="h-4 -mt-4"
-                      style={{ backgroundColor: '#FFBE3F', width: '18.5rem' }}
+                      className="h-4 -mt-3 border-none bg-yellowishLine"
+                      style={{ width: '18.5rem' }}
                     />
                   </div>
                 </div>
@@ -156,15 +147,12 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full px-5">
-          <div className="w-full max-w-6xl mx-auto py-20">
+          <div className="w-full max-w-7xl mx-auto pt-20 py-24">
             <div className="w-full min-w-full relative flex justify-center items-center">
               <img src="/images/video.png" className="w-full h-auto" />
               <img src="/images/play-icon.png" className="absolute phone:w-24 phone:h-auto" />
             </div>
-            <div
-              className="w-full flex justify-between mt-32 smallLaptop:flex-col smallLaptop:mt-20 phone:mt-16"
-              style={{ color: '#4D4D4D' }}
-            >
+            <div className="w-full flex justify-between mt-32 text-greyishText smallLaptop:flex-col smallLaptop:mt-20 phone:mt-16">
               <p className="text-2xl mr-auto mt-16 smallLaptop:mt-0 smallLaptop:mb-10">
                 Get involved
               </p>
@@ -181,14 +169,16 @@ export default function Home() {
                 >
                   <input
                     placeholder="Full name"
-                    className="p-5 rounded-md w-full mb-5 border border-gray-300"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    style={{ borderWidth: '1.5px' }}
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
                   <input
                     placeholder="Email address"
-                    className="p-5 rounded-md w-full mb-5 border border-gray-300"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    style={{ borderWidth: '1.5px' }}
                     type="email"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     onInvalid={(e) =>
@@ -203,7 +193,8 @@ export default function Home() {
                   />
                   <input
                     placeholder="Phone number"
-                    className="p-5 rounded-md w-full mb-5 border border-gray-300"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    style={{ borderWidth: '1.5px' }}
                     type="tel"
                     pattern="[0]{1}[7-9]{1}[0-9]{9}"
                     onInvalid={(e) =>
@@ -218,13 +209,15 @@ export default function Home() {
                   />
                   <input
                     placeholder="Company name"
-                    className="p-5 rounded-md w-full mb-5 border border-gray-300"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    style={{ borderWidth: '1.5px' }}
                     required
                     value={company_name}
                     onChange={(e) => setCompanyName(e.target.value)}
                   />
                   <textarea
-                    className="p-5 rounded-md w-full mb-5 border border-gray-300"
+                    className="p-5 rounded-xl w-full mb-5 border-inputBorder"
+                    style={{ borderWidth: '1.5px' }}
                     placeholder="Message"
                     required
                     value={message}
@@ -235,96 +228,41 @@ export default function Home() {
                   {errorMessage && <p className="mb-5 text-red-500">{errorMessage}</p>}
                   <button
                     type="submit"
-                    className="flex items-center text-2xl border-none"
+                    className="flex items-center text-2xl border-none font-semibold text-greyishText"
                     disabled={submitting}
                   >
                     <p>{submitting ? 'Sending message...' : 'Send message'}</p>
                     <ArrowRight className="ml-2 mx-auto" />
                   </button>
-                  <hr className="h-4 w-48 -mt-4" style={{ backgroundColor: '#FFBE3F' }} />
+                  <hr className="h-4 w-48 -mt-3" style={{ backgroundColor: '#FFBE3F' }} />
                 </form>
               </div>
             </div>
-            <hr className="w-full bg-gray-500 mt-20" style={{ height: '1.5px' }} />
+            <hr className="w-full bg-inputBorder mt-20" style={{ height: '1px' }} />
             <div className="mt-20">
-              <p
-                className="text-8xl max-w-4xl tablet:text-6xl smallPhone:break-all"
-                style={{ color: '#4D4D4D' }}
-              >
+              <p className="text-8xl max-w-4xl text-greyishText tablet:text-6xl smallPhone:break-all">
                 Stay in the Know
               </p>
               <input
                 placeholder="Email address"
-                className="p-5 rounded-md w-full max-w-4xl mt-10 mb-5 border border-gray-300"
+                className="p-5 rounded-xl w-full max-w-4xl mt-10 mb-5 border-inputBorder"
+                style={{ borderWidth: '1.5px' }}
               />
               <div className="mt-8">
-                <div className="flex items-center text-2xl cursor-pointer">
+                <div className="flex items-center text-2xl cursor-pointer text-greyishText font-semibold">
                   <p>Subscribe to our newsletter</p>
                   <ArrowRight className="ml-2 mx-auto fill-current" />
                 </div>
                 <hr
-                  className="h-4 -mt-4 smallPhone:hidden"
-                  style={{ backgroundColor: '#FFBE3F', width: '21rem' }}
+                  className="h-4 -mt-3 bg-yellowishLine smallPhone:hidden"
+                  style={{ width: '21rem' }}
                 />
-                <hr
-                  className="h-4 -mt-4 hidden smallPhone:block"
-                  style={{ backgroundColor: '#FFBE3F' }}
-                />
+                <hr className="h-4 -mt-3 bg-yellowishLine hidden smallPhone:block" />
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full bg-black py-28 relative px-5">
-          <div className="w-full max-w-6xl mx-auto grid grid-cols-2 text-white smallTablet:grid-cols-1">
-            <div className="col-span-1 text-xl smallTablet:mb-16">
-              <img src="/images/dg-logo-white.png" className="mb-10" />
-              <p className="font-semibold">
-                The Office of <br />
-                Damir Radmjal Gojak,
-              </p>
-              <p className="mb-6">Presidential Candidate 2023</p>
-              <p>
-                ©2020 <br />
-                Privacy Policy
-              </p>
-            </div>
-            <div className="col-span-1">
-              <div className="w-full flex justify-between space-x-5 font-semibold text-xl tablet:flex-col tablet:space-x-0">
-                <a className="hover:text-yellow-500 mb-2" href="#">
-                  Meet Damir
-                </a>
-                <a className="hover:text-yellow-500 mb-2" href="#">
-                  Our Agenda
-                </a>
-                <a className="hover:text-yellow-500 mb-2" href="#">
-                  Policies
-                </a>
-                <a className="hover:text-yellow-500 mb-2" href="#">
-                  Events
-                </a>
-                <a className="hover:text-yellow-500 mb-2" href="#">
-                  Stores
-                </a>
-              </div>
-              <hr className="w-full bg-white my-10" style={{ height: '1.5px' }} />
-              <p className="text-lg mb-5">Follow us on social media</p>
-              <div className="flex space-x-5 flex-wrap">
-                <a href="https://instagram.com" target="_blank" rel="noopener">
-                  <Instagram />
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener">
-                  <Facebook />
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <LinkedIn />
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener">
-                  <Twitter />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );

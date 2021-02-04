@@ -14,7 +14,7 @@ function Navbar() {
         Events
       </a>
       <a className="border-yellow-400 hover:border-b-4 phone:mb-2" href="#">
-        Stores
+        Store
       </a>
     </div>
   );
